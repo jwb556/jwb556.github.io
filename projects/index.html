@@ -1,0 +1,16 @@
+---
+layout: default
+title: Engineering Projects
+---
+    <h1>List of Projects...</h1>
+    <ul class="posts">
+
+      {% for post in site.posts %}
+        <li>
+          <a href="{{ post.url }}">
+             {{ post.title }}
+          </a>
+        </li>
+      {% endfor %}
+
+    </ul>

@@ -45,7 +45,6 @@ body{
 
 .bdiv{
   background-color: #E2E3E1;
-  height: 100%;
   width: 100%;
   position: absolute;
   vertical-align: top;
@@ -62,6 +61,13 @@ body{
   background-color: #FFFFFF;
   margin: 0 auto;
   width: 80%;
-  height: 100%;
 
+}
+[alt="minipic"] {
+  text-align: center;
+  width: 100%;
+}
+.subcenter{
+  text-align: center;
+  font-weight: bold;
 }

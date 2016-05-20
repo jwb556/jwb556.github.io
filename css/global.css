@@ -35,6 +35,7 @@ body{
 }
 
 .chead2{
+  float: top;
   background-color: #424142;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -44,11 +45,12 @@ body{
 }
 
 .bdiv{
+  float: top;
   background-color: #E2E3E1;
   width: 100%;
-  position: absolute;
+  height: auto;
+  position: block;
   vertical-align: top;
-
 }
 
 .bcontent{
@@ -61,8 +63,21 @@ body{
   background-color: #FFFFFF;
   margin: 0 auto;
   width: 80%;
-
+  height: 100%;
 }
+
+.bcontentpost{
+  vertical-align: top;
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+  
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  width: 80%;
+}
+
 [alt="minipic"] {
   text-align: center;
   width: 100%;

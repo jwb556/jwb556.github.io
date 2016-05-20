@@ -24,13 +24,13 @@ The actual design requirements are/were pretty short.
 
 ---
 <h3><center><b>Blown Fuse Indicator Circuit</b></center></h3>
-![minipic](/img/reg/fuse_blow.jpg)
+![minipic](/img/reg/fuse_blow.JPG)
 
 This circuit is slick in that the LED will only light when the fuse has opened.  In all other conditions the voltage drop across the fuse disallows the LED to light.  When sizing the LED current limiting resistor, a full 12V is assumed at then input of the LED. Note:This circuit only works if the load size of the resistor has a heavy constant load.  If there is no load, the LED will not light, as their is no return path for the current from the line side of the circuit.
 
 ---
 <h3><center><b>Linear Regulator Circuit and Losses</b></center></h3>
-![minipic](/img/reg/lin_regs.jpg)
+![minipic](/img/reg/lin_regs.JPG)
 
 Shown above, because of the nature of linear regulators there is a lot of extraneous current draw from the battery.  A conservative estimate of this waste is 1.9A.  
 
@@ -42,7 +42,7 @@ There are many switching regulators/controller ICs out there.  One that caught m
 
 ---
 <h3><center><b>Original Application Note</b></center></h3>
-![minipic](/img/reg/anote_orig.jpg)
+![minipic](/img/reg/anote_orig.JPG)
 
 The application circuit has a 3.3V output, but in our configuration we need a 7.4V output.  To accomplish this, we first change the resistor divider that feeds the feedback pin (FB).  
 
@@ -53,13 +53,13 @@ For sake of using readily available resistors, R3 will be 1Meg and R4 will be 20
 Switching these two resistor values only yields the following simulation:
 
 <h3><center><b>Feedback Resistor Change Only</b></center></h3>
-![minipic](/img/reg/mod1_sim.jpg)
+![minipic](/img/reg/mod1_sim.JPG)
 
 Changing only those two feedback resistor yielded large steady state error, 6.8V out instead of 7.4V out.  To compensate for this the datasheet suggests increasing the inductor and output filter capacitor values.  Changing the inductor value from 15uH to 60uH and the output capacitor from 150uF to 300uF seemed to do the trick in simulation.
 
 
 <h3><center><b>Feedback Resistor and Inductance/Capacitance Increase</b></center></h3>
-![minipic](/img/reg/mod2_sim.jpg)
+![minipic](/img/reg/mod2_sim.JPG)
 
 When measured in this configuration the output voltage was 7.35V.  Since this rail was originally for hobbyist grade servo motors, this 1.4% error is close enough.
 

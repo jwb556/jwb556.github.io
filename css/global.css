@@ -13,7 +13,6 @@
   margin-right: 0px;
   margin-left: 10px;
   color: #5577DD;
-  float: left; 
   font-size: 150%;
   font-family: Arial Black, Gadget, sans-serif;
 }
@@ -27,15 +26,26 @@
   font-family: 'Courier New', Courier, monospace; 
 }
 
+.inhead{
+  background-color: inherit;
+}
+
+a.inhead{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 150%;
+  color: inherit;
+}
+
 body{
   margin-top: 0px;
   margin-bottom: 0px;
   margin-right: 0px;
   margin-left: 0px;
+  min-height: 100vh;
 }
 
 .chead2{
-  float: top;
   background-color: #424142;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -45,11 +55,9 @@ body{
 }
 
 .bdiv{
-  float: top;
-  background-color: #E2E3E1;
+  background-color: #FFFFFF;
   width: 100%;
-  height: auto;
-  position: block;
+  height: 100vh;
   vertical-align: top;
 }
 

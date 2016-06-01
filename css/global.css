@@ -30,6 +30,10 @@
   background-color: inherit;
 }
 
+a:hover{
+  background-color: white;
+}
+
 a.inhead{
   text-decoration: none;
   font-weight: bold;
